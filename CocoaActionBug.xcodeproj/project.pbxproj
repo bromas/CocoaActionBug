@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F8864351B02756500DF00B5 /* ActionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8864341B02756500DF00B5 /* ActionSpec.swift */; };
+		5F88643A1B02758100DF00B5 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFCB9571B02426700495824 /* Result.framework */; };
+		5F88643C1B0275A700DF00B5 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F88643B1B0275A700DF00B5 /* ReactiveCocoa.framework */; };
+		5F88643F1B02770A00DF00B5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F88643D1B02770A00DF00B5 /* Nimble.framework */; };
+		5F8864401B02770A00DF00B5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F88643E1B02770A00DF00B5 /* Quick.framework */; };
 		5FFCB9301B023F4C00495824 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCB92F1B023F4C00495824 /* AppDelegate.swift */; };
 		5FFCB9321B023F4C00495824 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCB9311B023F4C00495824 /* ViewController.swift */; };
 		5FFCB9351B023F4C00495824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCB9331B023F4C00495824 /* Main.storyboard */; };
 		5FFCB9371B023F4C00495824 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCB9361B023F4C00495824 /* Images.xcassets */; };
 		5FFCB93A1B023F4C00495824 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCB9381B023F4C00495824 /* LaunchScreen.xib */; };
-		5FFCB9461B023F4C00495824 /* CocoaActionBugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCB9451B023F4C00495824 /* CocoaActionBugTests.swift */; };
 		5FFCB9501B023F7B00495824 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCB94F1B023F7B00495824 /* Cartfile */; };
 		5FFCB9581B02426700495824 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFCB9551B02426700495824 /* Box.framework */; };
-		5FFCB9591B02426700495824 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFCB9561B02426700495824 /* ReactiveCocoa.framework */; };
 		5FFCB95A1B02426700495824 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFCB9571B02426700495824 /* Result.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F8864341B02756500DF00B5 /* ActionSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionSpec.swift; sourceTree = "<group>"; };
+		5F88643B1B0275A700DF00B5 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		5F88643D1B02770A00DF00B5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		5F88643E1B02770A00DF00B5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		5FFCB92A1B023F4C00495824 /* CocoaActionBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaActionBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFCB92E1B023F4C00495824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FFCB92F1B023F4C00495824 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,10 +46,8 @@
 		5FFCB9391B023F4C00495824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5FFCB93F1B023F4C00495824 /* CocoaActionBugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaActionBugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFCB9441B023F4C00495824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FFCB9451B023F4C00495824 /* CocoaActionBugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaActionBugTests.swift; sourceTree = "<group>"; };
 		5FFCB94F1B023F7B00495824 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		5FFCB9551B02426700495824 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/iOS/Box.framework; sourceTree = "<group>"; };
-		5FFCB9561B02426700495824 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		5FFCB9571B02426700495824 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,7 +58,6 @@
 			files = (
 				5FFCB95A1B02426700495824 /* Result.framework in Frameworks */,
 				5FFCB9581B02426700495824 /* Box.framework in Frameworks */,
-				5FFCB9591B02426700495824 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8864401B02770A00DF00B5 /* Quick.framework in Frameworks */,
+				5F88643F1B02770A00DF00B5 /* Nimble.framework in Frameworks */,
+				5F88643A1B02758100DF00B5 /* Result.framework in Frameworks */,
+				5F88643C1B0275A700DF00B5 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,8 +78,10 @@
 		5FFCB9211B023F4C00495824 = {
 			isa = PBXGroup;
 			children = (
+				5F88643D1B02770A00DF00B5 /* Nimble.framework */,
+				5F88643E1B02770A00DF00B5 /* Quick.framework */,
+				5F88643B1B0275A700DF00B5 /* ReactiveCocoa.framework */,
 				5FFCB9551B02426700495824 /* Box.framework */,
-				5FFCB9561B02426700495824 /* ReactiveCocoa.framework */,
 				5FFCB9571B02426700495824 /* Result.framework */,
 				5FFCB92C1B023F4C00495824 /* CocoaActionBug */,
 				5FFCB9421B023F4C00495824 /* CocoaActionBugTests */,
@@ -113,7 +123,7 @@
 		5FFCB9421B023F4C00495824 /* CocoaActionBugTests */ = {
 			isa = PBXGroup;
 			children = (
-				5FFCB9451B023F4C00495824 /* CocoaActionBugTests.swift */,
+				5F8864341B02756500DF00B5 /* ActionSpec.swift */,
 				5FFCB9431B023F4C00495824 /* Supporting Files */,
 			);
 			path = CocoaActionBugTests;
@@ -155,6 +165,7 @@
 				5FFCB93B1B023F4C00495824 /* Sources */,
 				5FFCB93C1B023F4C00495824 /* Frameworks */,
 				5FFCB93D1B023F4C00495824 /* Resources */,
+				5F8864411B02775E00DF00B5 /* Copy Frameworks for Carthage */,
 			);
 			buildRules = (
 			);
@@ -225,6 +236,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5F8864411B02775E00DF00B5 /* Copy Frameworks for Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+			);
+			name = "Copy Frameworks for Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "";
+		};
 		5FFCB9541B02413400495824 /* Copy Frameworks for Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FFCB9461B023F4C00495824 /* CocoaActionBugTests.swift in Sources */,
+				5F8864351B02756500DF00B5 /* ActionSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +437,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -429,6 +457,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = CocoaActionBugTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +485,7 @@
 				5FFCB94B1B023F4C00495824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FFCB94C1B023F4C00495824 /* Build configuration list for PBXNativeTarget "CocoaActionBugTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +494,7 @@
 				5FFCB94E1B023F4C00495824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -14,7 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         // works fine on simulator, crashes on device in Signal.swift, line 44
-        button.addTarget(cocoaAction, action: CocoaAction.selector, forControlEvents: .TouchUpInside)
+// commented out in order to be able to run tests
+//        button.addTarget(cocoaAction, action: CocoaAction.selector, forControlEvents: .TouchUpInside)
     }
 }
 
