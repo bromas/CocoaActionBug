@@ -13,6 +13,10 @@
 		5FFCB9371B023F4C00495824 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCB9361B023F4C00495824 /* Images.xcassets */; };
 		5FFCB93A1B023F4C00495824 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCB9381B023F4C00495824 /* LaunchScreen.xib */; };
 		5FFCB9461B023F4C00495824 /* CocoaActionBugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCB9451B023F4C00495824 /* CocoaActionBugTests.swift */; };
+		5FFCB9501B023F7B00495824 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 5FFCB94F1B023F7B00495824 /* Cartfile */; };
+		5FFCB9581B02426700495824 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFCB9551B02426700495824 /* Box.framework */; };
+		5FFCB9591B02426700495824 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFCB9561B02426700495824 /* ReactiveCocoa.framework */; };
+		5FFCB95A1B02426700495824 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFCB9571B02426700495824 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		5FFCB93F1B023F4C00495824 /* CocoaActionBugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaActionBugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFCB9441B023F4C00495824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FFCB9451B023F4C00495824 /* CocoaActionBugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaActionBugTests.swift; sourceTree = "<group>"; };
+		5FFCB94F1B023F7B00495824 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		5FFCB9551B02426700495824 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Box.framework; path = Carthage/Build/iOS/Box.framework; sourceTree = "<group>"; };
+		5FFCB9561B02426700495824 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		5FFCB9571B02426700495824 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FFCB95A1B02426700495824 /* Result.framework in Frameworks */,
+				5FFCB9581B02426700495824 /* Box.framework in Frameworks */,
+				5FFCB9591B02426700495824 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +70,13 @@
 		5FFCB9211B023F4C00495824 = {
 			isa = PBXGroup;
 			children = (
+				5FFCB9551B02426700495824 /* Box.framework */,
+				5FFCB9561B02426700495824 /* ReactiveCocoa.framework */,
+				5FFCB9571B02426700495824 /* Result.framework */,
 				5FFCB92C1B023F4C00495824 /* CocoaActionBug */,
 				5FFCB9421B023F4C00495824 /* CocoaActionBugTests */,
 				5FFCB92B1B023F4C00495824 /* Products */,
+				5FFCB94F1B023F7B00495824 /* Cartfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +137,7 @@
 				5FFCB9261B023F4C00495824 /* Sources */,
 				5FFCB9271B023F4C00495824 /* Frameworks */,
 				5FFCB9281B023F4C00495824 /* Resources */,
+				5FFCB9541B02413400495824 /* Copy Frameworks for Carthage */,
 			);
 			buildRules = (
 			);
@@ -194,6 +210,7 @@
 			files = (
 				5FFCB9351B023F4C00495824 /* Main.storyboard in Resources */,
 				5FFCB93A1B023F4C00495824 /* LaunchScreen.xib in Resources */,
+				5FFCB9501B023F7B00495824 /* Cartfile in Resources */,
 				5FFCB9371B023F4C00495824 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +223,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FFCB9541B02413400495824 /* Copy Frameworks for Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Box.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			name = "Copy Frameworks for Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5FFCB9261B023F4C00495824 /* Sources */ = {
@@ -291,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -330,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,6 +379,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CocoaActionBug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +393,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CocoaActionBug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

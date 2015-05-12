@@ -1,25 +1,20 @@
-//
-//  ViewController.swift
-//  CocoaActionBug
-//
-//  Created by Siemen Sikkema on 12/05/15.
-//  Copyright (c) 2015 Unclutter. All rights reserved.
-//
-
+import ReactiveCocoa
 import UIKit
+
+let action = Action<Void, Void, NoError> {
+    return SignalProducer.empty
+}
+let cocoaAction = CocoaAction(action) { _ in println("button tapped") }
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var button: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // works fine on simulator, crashes on device in Signal.swift, line 44
+        button.addTarget(cocoaAction, action: CocoaAction.selector, forControlEvents: .TouchUpInside)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
